@@ -1,4 +1,4 @@
-
+const PORT = process.env.PORT || 8080;
 
 const express = require('express');
 
@@ -57,4 +57,4 @@ app.post("/is-order-complete",(req,res) => {
 
 });
 
-app.listen(5000);
+app.listen(PORT);
