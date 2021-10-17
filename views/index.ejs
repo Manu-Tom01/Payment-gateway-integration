@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy a book</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+
+<body>
+
+  <section class="hero is-link is-fullheight">
+    <div class="hero-body is-centered">
+      <div class="container">
+        <div class="columns is-centered is-vcentered">
+
+          <div class="column is-6">
+            <p class="title is-size-1">Just a book</p>
+            <p class="subtitle is-size-4">You can now read this book just for ₹500</p>
+            <form class="" action="/makeOrder" method="post">
+              <span class = "is-size-4">
+               Name
+              </span>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-light is-medium" type="text" name="name" value="">
+                </div>
+              </div>
+              <br>
+              <span class = "is-size-4">
+               Amount
+              </span>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-light is-medium" type="number" name="amount" value="">
+                </div>
+              </div>
+              <br>
+              <button class="button is-link is-light is-medium" id="rzp-button1">Donate</button>
+            </form>
+
+          </div>
+
+          <div class="column is-5">
+            <figure class="image">
+
+              <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1" style="border-radius: 10px" alt="">
+
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
